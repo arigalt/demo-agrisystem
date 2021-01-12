@@ -36,7 +36,7 @@ class ResPartner(models.Model):
             total = 0
             i = 2
             for c in secuencia[::-1]:
-                total += float(c) * i
+                total += int(c) * i
                 i += 1
 
             resultante = ( 11 - ( total % 11 ) ) % 11
